@@ -1,0 +1,43 @@
+body
+{
+	padding: 0;
+}
+
+#page-title
+{
+	display: block;
+	width: 100%;
+	text-align: left;
+	padding-left: 3em;
+
+}
+
+#main-menu
+{
+	text-align: center;
+}
+
+#main-wrapper
+{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.narrow
+{
+	width: 10em;
+}
+
+.wide
+{
+	width: 25em;
+}
+
+.centered
+{
+	margin: 0 auto;
+}
+
+.bordered
+{
+}

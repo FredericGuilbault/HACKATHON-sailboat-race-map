@@ -8,11 +8,10 @@ require_once 'class/database.class.php';
 ?>
 
 <html>
-<head>
-    <title> Courseur </title>
-</head>
+<?php $pageTitle = "Courseur"; include('inc/head.inc'); ?>
 <body>
 
+<div id="main-wrapper" class="centered">
 <?php
 
 if ( Cookie::exist() ){
@@ -44,6 +43,7 @@ if ( Cookie::exist() ){
 }
 
 ?>
+</div>
 
 </body>
 </html>
