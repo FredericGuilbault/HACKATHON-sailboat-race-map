@@ -12,12 +12,6 @@ if( isset($_GET['getBoatList']) && $_GET['getBoatList'] ){
     $boatList = $db->getActiveBoats(6); // the boats that was active in the last 6 min;
     echo json_encode($boatList);
 
-
-
-
-
-
-
 }else if( $_GET['getCoor'] ){
     $coorList = array();
 

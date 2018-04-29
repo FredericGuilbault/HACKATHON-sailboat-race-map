@@ -18,10 +18,9 @@ xhttp.onreadystatechange = function() {
         create_profil(trackedBoats );
         window.setInterval(function(){
             var pos = queryBoatsPos(trackedBoats)
-console.log(pos )
+            //console.log(pos )
+
             //    marker.setLatLng([lat, lng]).update();
-
-
         }, 1000);
     }
 }
@@ -56,12 +55,31 @@ function queryBoatsPos(boats){
         if (xhttp.readyState === 4) {
             var data = JSON.parse(xhttp.response,true)
 
-            for( let key in data ){
-                console.log( data[key][0].lat )
-                console.log( data[key][0].lon )
 
-                
-                //newLatLng
+            for( let key in data ){
+                if( data[key].length > 0 ){
+
+                    console.log( '=========================================================')
+                    console.log( key)
+                    console.log( data[key][0].lat )
+                    console.log( data[key][0].lon )
+
+                    for( i in trackedBoats ){
+                         if(trackedBoats[i][0]['cookie'] == key ){
+
+
+
+                             latlonnn = new L.LatLng( data[key][0].lat, data[key][0].lon )
+                             //console.log(latlonnn);
+                             //latlonnn = new L.LatLng(1,1)
+                             //marker = L.marker(L.LatLng(data[key][0].lat, data[key][0].lon)).addTo(mymap);
+                             trackedBoats[i][1].setLatLng(latlonnn)
+                         }
+
+                     }
+                 }
+
+
                 //marker.setLatLng(newLatLng);
             }
         }
