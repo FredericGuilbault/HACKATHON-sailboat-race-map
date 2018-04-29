@@ -10,7 +10,7 @@ require_once 'class/database.class.php';
 <html>
 <?php $pageTitle = "Courseur"; include('inc/head.inc'); ?>
 <body>
-
+<?php include('inc/page-title.inc'); ?>
 <div id="main-wrapper" class="centered">
 <?php
 

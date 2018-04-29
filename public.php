@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Course</title>
+    <?php $pageTitle = "Course"; include('inc/head-contents.inc'); ?>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
           integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
           crossorigin=""/>
@@ -11,6 +11,8 @@
 
 </head>
 <body>
+<?php include('inc/page-title.inc'); ?>
+<div ="main-wrapper">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <button><h1>Quillard</h1></button>
 <button><h1>Catamaran</h1></button>
@@ -27,6 +29,7 @@
 </script>
 
 <div id="map"></div>
+</div>
 <link rel="stylesheet" type="text/css" href="css/public.css">
 <script src="js/public.js"></script>
 </body>
