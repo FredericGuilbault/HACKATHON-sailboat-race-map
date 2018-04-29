@@ -9,7 +9,10 @@ body
 	width: 100%;
 	text-align: left;
 	padding-left: 3em;
-
+	background-image: url('/img/wave-med.png');
+	background-repeat: no-repeat;
+	background-color: #b0c4de;
+	background-position: left;
 }
 
 #main-menu
