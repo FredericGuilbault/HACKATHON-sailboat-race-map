@@ -1,14 +1,14 @@
 <br><br>
 <button onclick="geoloc()">
-<h1>    Start   </h1>
+<h1>Start</h1>
 </button>
 <br><br>
 <button onclick="stopWatch()">
-    <h1>    Stop</h1>
+<h1>Stop</h1>
 </button>
 <br><br>
 <button onclick="deleteCookie()">
-    <h1>     Delete</h1>
+<h1>Delete</h1>
 </button>
 <br><br>
 <div id="out"></div>
@@ -48,8 +48,6 @@
 
         xhttp.open("GET", "post.php?lat="+position.coords.latitude+"&lon="+position.coords.longitude+"&id="+cookieId, true);
         xhttp.send();
-
-
     }
 
 
@@ -57,7 +55,6 @@
         if (watchId) {
             navigator.geolocation.clearWatch(watchId);
             watchId = null;
-
         }
     }
 

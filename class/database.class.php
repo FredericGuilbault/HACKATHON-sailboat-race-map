@@ -21,4 +21,22 @@ class Db {
         $this->con->query("INSERT INTO `positions`(`cookie`,`heure`,`lat`,`lon`) VALUES ('".$cookie."',"."CURRENT_TIMESTAMP".",'".$lat."','".$lon."');");
     }
 
+    function getActiveBoats($min){
+                    $rboat = $this->con->query("SELECT * FROM `courseur` " );
+        return $rboat->fetchAll(2);
+    }
+
+    function  getLastPosOf($cookie){
+        $r = $this->con->query("SELECT lat, lon FROM `positions` WHERE `cookie` LIKE '$cookie' ORDER BY datetime(heure) DESC  LIMIT 1" );
+        return $r->fetchAll(2);
+    }
+
+    function getBoatData($cookie){
+        $boatData= array();
+        $boat = $this->con->query("SELECT * FROM `courseur` WHERE  `cookie` = '".$cookie."'" );
+        //FIXME  assume array of boatdata
+        return $boatData;
+
+
+    }
 }
