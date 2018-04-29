@@ -1,7 +1,5 @@
 <html>
-<head>
-    <title>Accueil</title>
-</head>
+<?php $pageTitle = "Accueil"; include('inc/head.inc'); ?>
 <body>
     <h1>Accueil</h1>
     <a href="public.php"><button> Carte </button></a><br><br>
