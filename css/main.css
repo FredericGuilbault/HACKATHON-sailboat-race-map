@@ -1,3 +1,14 @@
-h1{
-	color: red;
+body
+{
+	padding: 1em;
+}
+
+.narrow
+{
+	width: 5em;
+}
+
+.centered
+{
+	margin: 0 auto;
 }
