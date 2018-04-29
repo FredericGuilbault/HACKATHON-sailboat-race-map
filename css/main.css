@@ -1,6 +1,14 @@
 body
 {
-	padding: 1em;
+	padding: 0;
+}
+
+#page-title
+{
+	display: block;
+	width: 100%;
+	text-align: left;
+	padding-left: 3em;
 }
 
 #main-menu
@@ -27,4 +35,8 @@ body
 .centered
 {
 	margin: 0 auto;
+}
+
+.bordered
+{
 }
