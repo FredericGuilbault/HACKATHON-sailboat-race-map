@@ -8,9 +8,20 @@ body
 	text-align: center;
 }
 
+#main-wrapper
+{
+	width: 90%;
+	margin: 0 auto;
+}
+
 .narrow
 {
 	width: 10em;
+}
+
+.wide
+{
+	width: 25em;
 }
 
 .centered
