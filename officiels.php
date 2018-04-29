@@ -1,7 +1,5 @@
 <html>
-<head>
-    <title></title>
-</head>
+<?php $pageTitle = ""; include('inc/head.inc'); ?>
 <body>
 </body>
 </html>
